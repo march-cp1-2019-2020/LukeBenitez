@@ -1,16 +1,8 @@
-package Worksheets;
+package forClass;					//Luke Benitez
 
-public class Employee {
-        String name;
-        String ssn;
-        int dateOfBirth;
-        
-        void paySalary() {
-        	System.out.println("Here's your pay.");
-        	//gives Employee money
-        }
-        void takeVacation () {
-        	System.out.println("I'M GOING ON VACATION!!!");
-        	//goes on vacation
-        }
+public class Employee extends Person {
+       String office;
+       double salary;
+       
+       MyDate dateHired = new MyDate();
 }
