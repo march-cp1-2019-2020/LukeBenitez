@@ -30,8 +30,11 @@ public class LineItemApp {
             } else {
                 price = 0;
             }
-            {
+            {//TEACHER NOTES: this open curly brace is extra and not needed
             
+             // TEACHER NOTES: notice how this if/else block is so similar to the above one...
+             // that means you should incorporate this in the above block instead of
+             // having duplicates.
             if (android.equalsIgnoreCase("android")) {
                     price = 60.00;
                 } else if (android.equalsIgnoreCase("jsp")) {
@@ -41,7 +44,8 @@ public class LineItemApp {
                 } else {
                     price = 0;
                 }
-            }
+            }//TEACHER NOTES:this closing curly brace is extra and not needed
+            
             // calculate total
             double total = price * quantity;
 
