@@ -18,6 +18,9 @@ public class AreaAndPerimeter {
         int width = Integer.parseInt(sc.nextLine());
 	   
         double area;
+	    
+	// TEACHER NOTES: looks like you have a little extra code left over from the other assignment.
+	// productCode shouldn't be part of the area and perimeter class.
         if (productCode.equalsIgnoreCase("100")) {
             area = 20000.000;
         } else if (productCode.equalsIgnoreCase("3")) {
@@ -30,6 +33,7 @@ public class AreaAndPerimeter {
        
         double total = area * width;
 
+	// TEACHER NOTES: don't need currency in this class.  it doesn't have anything to do with area and perimeter
               NumberFormat currency = NumberFormat.getCurrencyInstance();
         String message = "\nLINE ITEM\n"
                 + "Area:        " + productCode + "\n"
